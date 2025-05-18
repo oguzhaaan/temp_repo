@@ -1,0 +1,19 @@
+package g11.reservationservice.configs
+
+import io.swagger.v3.oas.models.OpenAPI
+import io.swagger.v3.oas.models.info.Info
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Configuration
+
+@Configuration
+class OpenAPIConfig {
+    @Bean
+    fun getOpenApiDocumentation(): OpenAPI = OpenAPI()
+        .info(
+            Info()
+                .title("Reservation Service API")
+                .description("API documentation for the Reservation Service")
+                .version("v1.0")
+        )
+
+}

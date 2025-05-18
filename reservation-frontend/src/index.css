@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Button */
+.button {
+    @apply transform rounded-xl px-2.5 py-1 font-semibold shadow-sm transition duration-300 text-gray-100;
+}
+.button:hover {
+    @apply scale-105 brightness-110;
+}
+
+/* Home Page Buttons */
+.homeButton {
+    @apply flex items-center justify-center gap-4 rounded-full px-6 py-3 text-lg font-semibold text-white shadow-lg transition-transform;
+}
+.homeButton:hover {
+    @apply scale-105;
+}
+
+/* Input */
+.input {
+    @apply w-full rounded-xl border border-slate-300 px-4 py-2 text-sm shadow-md text-slate-700 transition duration-200;
+}
+.input:focus {
+    @apply border-indigo-500 ring-2 ring-indigo-300;
+}
+.input:hover {
+    @apply shadow-lg outline-none border-blue-500;
+}
+input:disabled {
+    @apply cursor-not-allowed bg-gray-100
+}
+
+/* Card */
+/*.card {*/
+/*    @apply ;*/
+/*}*/
+
+/* Label */
+/*.label {*/
+/*    @apply ;*/
+/*}*/
